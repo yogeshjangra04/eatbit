@@ -13,12 +13,12 @@ const app = express();
 app.use(express.json({ limit: '30mb', extended: true }))  // to parse body in json format (body parser)
 app.use(express.urlencoded({limit: '30mb',extended:true}))
 const PORT= process.env.PORT || 5000
-const uri  = "mongodb+srv://Print-X:Pass%40123@cluster0.w844m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri  = "mongodb+srv://hdddevice21:mongo@cluster0.mziarju.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(uri,
     err => {
         if(err) throw err;
-        console.log('connected...')
+        console.log('connected to mongoose...')
     });
 
 app.use(cors())
