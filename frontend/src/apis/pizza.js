@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://fooddelivery-yogesh.vercel.app/',
 });
 
 //"start": "node ./backend/server.js",
